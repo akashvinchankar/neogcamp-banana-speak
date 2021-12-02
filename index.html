@@ -6,33 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+        body{
+            margin: 0px;
+            font-family: 'Courgette', cursive;
+        }
+        #header{
+            text-align: center;
+            background-color: rgba(252, 211, 77);
+            padding: 2rem;
+            margin-top: 0rem;
+            display: block;
+            box-sizing: border-box;
+        }
+
         textarea{
             width: 80%;
             height: 10vh;
             display: block;
-            margin: 1rem;
             padding: 1rem;
+            margin: 3rem auto;
         }
 
         #output{
             border: 1px solid black;
             height: 10vh;
             width: 80%;
-            margin: 1rem;
+            margin: 1rem auto;
             padding: 1rem;
+            margin-top: 5rem auto;
+        }
+
+        button{
+            margin: auto;
+            background-color: rgba(252, 211, 77);
+            padding: 1rem;
+            border: none;
+            border-radius: 1rem;
+        }
+
+        .footer{
+            text-align: center;
+            background-color: rgba(252, 211, 77);
+            padding: 2rem;
+            margin-top: 3rem;
+            display: block;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <h1>talk bananaaa</h1>
+    <h1 id="header">talk bananaaa</h1>
 
     <textarea id="txt-input" placeholder="put your sentence in English and we will convert it to banana"></textarea>
+    <div style="text-align: center;"><button id="btn-translate">Translate</button></div>
+    
 
-    <button id="btn-translate">Translate</button>
-
-    <div style="font-size: larger;">Output will come here 👇</div>
+    <div style="font-size: larger; text-align: center; margin: 2rem auto;">Output will come here 👇</div>
     <div id="output"></div>
 
     <script src="app.js"></script>
+
+    <footer class="footer">
+        <h2>about</h2>
+        <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.</p>
+    </footer>
 </body>
 </html>
