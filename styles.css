@@ -1,51 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-        body{
-            margin: 0px;
-            font-family: 'Courgette', cursive;
-        }
-        
-        #header{
-            text-align: center;
-            background-color: rgba(252, 211, 77);
-            padding: 2rem;
-            margin-top: 0rem;
-            display: block;
-            box-sizing: border-box;
-        }
+:root{
+    --primary-yellow:rgba(252, 211, 77);
+    --secondary-blue: #344CB7;
+}
 
-        textarea{
-            width: 80%;
-            height: 10vh;
-            display: block;
-            padding: 1rem;
-            margin: 3rem auto;
-            max-width: 800px;
-        }
+body {
+    margin: 0px;
+    font-family: 'Courgette', cursive;
+}
 
-        #output{
-            border: 1px solid black;
-            height: 10vh;
-            width: 80%;
-            margin: 1rem auto;
-            padding: 1rem;
-            margin-top: 5rem auto;
-            max-width: 800px;
-        }
+#header {
+    color: var(--secondary-blue);
+    text-align: center;
+    background-color: var(--primary-yellow);
+    padding: 2rem;
+    margin-top: 0rem;
+    display: block;
+    box-sizing: border-box;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border: var(--secondary-blue) 5px solid;
+}
 
-        button{
-            margin: auto;
-            background-color: rgba(252, 211, 77);
-            padding: 1rem;
-            border: none;
-            border-radius: 1rem;
-        }
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    padding: 1rem;
+    margin: 3rem auto;
+    max-width: 800px;
+    border-radius: 1rem;
+    border: 3px solid var(--secondary-blue);
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Courgette', cursive;
+}
 
-        .footer{
-            text-align: center;
-            background-color: rgba(252, 211, 77);
-            padding: 2rem;
-            margin-top: 3rem;
-            display: block;
-            box-sizing: border-box;
-        }
+#output {
+    border: 3px solid var(--secondary-blue);
+    height: 10vh;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    margin-top: 5rem auto;
+    max-width: 800px;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+button {
+    margin: auto;
+    background-color: var(--primary-yellow);
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    border: 3px solid var(--secondary-blue);
+    color: var(--secondary-blue);
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Courgette', cursive;
+}
+
+.footer {
+    font-weight: bold;
+    color: var(--secondary-blue);
+    text-align: center;
+    background-color: var(--primary-yellow);
+    padding: 2rem;
+    margin-top: 3rem;
+    display: block;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
+    border: var(--secondary-blue) 5px solid;
+}
